@@ -36,12 +36,6 @@
     display: none;
 }
 
-@media screen and (min-width: 825px){
-    .titulo__cabecalho{
-        font-size: 10px;
-    }
-    
-}
 
 .container__botao:checked~ .lista-menu{
     display: block;
@@ -62,4 +56,21 @@
 .lista-menu__titulo, .lista-menu__item{
     padding: 1em;
     background-color: var(--branco);
+}
+
+@media screen and (min-width: 825px){
+    .titulo__cabecalho{
+        font-size: 10px;
+    }
+    .opcoes{
+        display: flex;
+    }
+    .opcoes__item{
+        padding: 0 1em;
+    }
+    .opcoes__link{
+        text-decoration: none;
+        color: var(--preto);
+    }
+    
 }
